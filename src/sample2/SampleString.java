@@ -168,6 +168,119 @@ public class SampleString {
 				    System.out.println(resultArray2[i]);
 				}
 
+				//---------------------------------------------------------------------------------------
+				//StringBuilderクラスのinsert
+				//StringBuilder     .insert(()
+				System.out.println();
+				System.out.println("*StringBuilderクラスのinsert-------");
+				System.out.println("*StringBuilder     .insert(()-------------");
+
+
+				StringBuilder sb = new StringBuilder("ABC");
+				System.out.println("[1]：" + sb.toString()); //[1]
+
+				boolean bool = true;
+				sb.insert(0,bool);
+				System.out.println("[2]：" + sb.toString()); //[2]
+
+				double dNum = 0.111111;
+				sb.insert(4,dNum);
+				System.out.println("[3]：" + sb.toString()); //[3]
+
+				char ch = '字';
+				sb.insert(13,ch);
+				System.out.println("[4]：" + sb.toString()); //[4]
+
+				char[] cArray = {'配', '列'};
+				sb.insert(2,cArray);
+				System.out.println("[5]：" + sb.toString()); //[5]
+
+				int num2 = 10;
+				sb.insert(15,num2);
+				System.out.println("[6]：" + sb.toString()); //[6]
+
+				long lNum = 999999999;
+				sb.insert(17,lNum);
+				System.out.println("[7]：" + sb.toString()); //[7]
+
+				float fNum = 100;
+				sb.insert(23,fNum);
+				System.out.println("[8]：" + sb.toString()); //[8]
+
+				String str ="String";
+				sb.insert(6,str);
+				System.out.println("[9]：" + sb.toString()); //[9]
+
+				String strNull =null;
+				sb.insert(25,strNull);
+				System.out.println("[10]：" + sb.toString()); //[10]
+
+				//---------------------------------------------------------------------------------------
+				//StringBuilderクラスのappend
+				//StringBuilder     .append(()
+				System.out.println();
+				System.out.println("*StringBuilderクラスのappend-------");
+				System.out.println("*StringBuilder     .append()-------------");
+
+
+				StringBuilder sb3 = new StringBuilder("おはよう");
+		        sb3.append("ございます。");
+		        System.out.println("[1]：" + sb3.toString()); //[1]
+
+		        boolean bool3 = true;
+		        sb3.append(bool3);
+		        System.out.println("[2]：" + sb3.toString()); //[2]
+
+		         double dNum3 = 0.123454;
+		        sb3.append(dNum3);
+		        System.out.println("[3]：" + sb3.toString()); //[3]
+
+		        char ch3 = '字';
+		        sb3.append(ch3);
+		        System.out.println("[4]：" + sb3.toString()); //[4]
+
+		        char[] cArray3 = {'配', '列'};
+		        sb3.append(cArray3);
+		        System.out.println("[5]：" + sb3.toString()); //[5]
+
+		        int num3 = 10;
+		        sb3.append(num3);
+		        System.out.println("[6]：" + sb3.toString()); //[6]
+
+		        long lNum3 = 999999999;
+		        sb3.append(lNum3);
+		        System.out.println("[7]：" + sb3.toString()); //[7]
+
+		        float fNum3 = 100;
+		        sb3.append(fNum3);
+		        System.out.println("[8]：" + sb3.toString()); //[8]
+
+		        String strr ="String";
+		        sb3.append(strr);
+		        System.out.println("[9]：" + sb3.toString()); //[9]
+
+		        StringBuffer sbf3 = new StringBuffer("StringBuffer");
+		        sb3.append(sbf3);
+		        System.out.println("[10]：" + sb3.toString()); //[10]
+
+		        String strNull3= null;
+		        sb3.append(strNull3);
+		        System.out.println("[11]：" + sb3.toString()); //[11]
+
+				//---------------------------------------------------------------------------------------
+				//UTF-16
+		        System.out.println();
+				System.out.println("*UTF-16---------------------------------");
+
+		        char literalACharacter = 'A';//[1]
+		        String literalAUtf16Code = "\u0041\u0042\u0043";//[2]
+		        char literalAACharacter = 'あ';//[3]
+		        char literalAAUtf16Code = '\u3042';//[4]
+		        System.out.println("[5] 半角英数字 = " + literalACharacter);
+		        System.out.println("[6] 半角英数字（文字コード） = " + literalAUtf16Code);
+		        System.out.println("[7] 全角文字 = " + literalAACharacter);
+		        System.out.println("[8] 全角文字（文字コード） = " + literalAAUtf16Code);
+
 	}
 
 }
